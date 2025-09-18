@@ -17,8 +17,11 @@ public class Greeter {
   }
 
   public static void main(String[] args) {
+      if(args.length>=0)
     String language = args[0];
+      if(args.length>=1)
     String country = args[1];
+      if(args.length>=2)
     String name = args[2];
     Greeter greeter = new Greeter(language, country, name);
     System.out.println(greeter.sayHello());
